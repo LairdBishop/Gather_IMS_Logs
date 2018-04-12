@@ -32,6 +32,7 @@ robocopy C:\Windows\CCM\Logs %~dp0LOGS-%COMPUTERNAME%\SCCM DISMImportCustomPatch
 robocopy C:\Windows\CCM\Logs %~dp0LOGS-%COMPUTERNAME%\SCCM OSD_CustomDrivers.log
 robocopy C:\Windows\CCM\Logs %~dp0LOGS-%COMPUTERNAME%\SCCM OSD_CustomPatches.log
 robocopy C:\Windows\CCM\Logs %~dp0LOGS-%COMPUTERNAME%\SCCM smsts.log
+robocopy /e C:\WINDOWS\ccm\Logs %~dp0LOGS-%COMPUTERNAME%\ccm\logs
 
 :: [MDT]
 MD MDT
@@ -43,4 +44,5 @@ robocopy C:\Windows\Temp\DeploymentLogs %~dp0\LOGS-%COMPUTERNAME%\MDT DISMImport
 robocopy C:\Windows\Temp\DeploymentLogs %~dp0\LOGS-%COMPUTERNAME%\MDT OSD_CustomDrivers.log
 robocopy C:\Windows\Temp\DeploymentLogs %~dp0\LOGS-%COMPUTERNAME%\MDT OSD_CustomPatches.log
 robocopy C:\Windows\Temp\DeploymentLogs %~dp0\LOGS-%COMPUTERNAME%\MDT smsts.log
+robocopy /e C:\WINDOWS\ccm\Logs %~dp0LOGS-%COMPUTERNAME%\ccm\logs
 
